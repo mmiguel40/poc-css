@@ -1,0 +1,131 @@
+/*Ajustes Globales*/
+html,
+body {
+    margin: 0px;
+    width: 100vw;
+    font-family: 'nunito';
+    background-image: url(../images/fondo.jpg);
+    overflow-x: hidden ;
+}
+
+h1,
+div,
+p {
+    margin: 0px;
+}
+
+
+/* Section Header */
+.section-header {
+    /* background-image: url(../images/fondo.jpg); */
+    background-size: cover no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100px;
+    color: white;
+}
+
+.section-header__title {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 3em;
+
+}
+
+.section-header__title-color {
+    color: yellow;
+}
+
+.section-header__subttitle {
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.text-shadow {
+    text-shadow:
+        4px 4px 4px black,
+        0 0 2em rgb(0, 55, 255),
+        0 0 1em rgb(0, 55, 255);
+}
+
+.section-header:hover{
+    cursor: pointer;
+}
+
+
+/* Section Main */
+.section-main {
+
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.section-main__container-planets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-main__container-planets__planet {
+    width: 100vw;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: left;
+    /* Cambiado a left para alinear el texto a la izquierda */
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section-main__container-planets__planet__image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    /* Añadido margen para separar la imagen del texto */
+}
+
+.section-main__container-planets__planet:hover {
+    cursor: pointer;
+
+    .section-main__container-planets__planet__info {
+        color: yellow;
+    }
+
+    .section-main__container-planets__planet__image img {
+        border: 4px solid yellow;
+    }
+}
+
+.section-main__container-planets__planet__image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.section-main__container-planets__planet__info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Footer */
+.section-footer {
+    width: 100vw;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: midnightblue;
+
+    font-weight: 400;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+}
